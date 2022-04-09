@@ -69,6 +69,68 @@ header.header-nav{
     font-size: 22px;
 }
 
+@media (max-width: 576px) {
+    .main-block div h1{
+        text-align: center;
+    }
+
+    .online-text{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .online-text{
+        font-size: 19px;
+    }
+}
+
+.background-online-line{
+    margin-bottom: 30px;
+    padding: 0;
+    height: 8px;
+    font-size: 0;
+    background-color: #eaf2fb;
+    border-radius: 8px;
+    width: 47%;
+}
+
+@media (max-width: 1400px) {
+    .background-online-line{
+        width: 66%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .background-online-line{
+        width: 78%;
+    }
+}
+
+@media (max-width: 992px) {
+    .background-online-line{
+        width: 88%;
+    }
+}
+
+@media (max-width: 576px) {
+    .background-online-line{
+        width: 100%;
+    }
+}
+
+.background-online-line div{
+    margin: 1px;
+    height: 8px;
+    background-color: #158EFF;
+    border-radius: 6px;
+    width: 0;
+}
+
+.online-line {
+    transition: width 0.8s;
+}
+
 .main-info{
     margin: auto;
     width: auto;
@@ -284,6 +346,16 @@ header.header-nav{
     .slider .slider__item {
         flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%;
+    }
+}
+
+#modifications-slider .slider-controls{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 350px) {
+    #modifications-slider .slider-controls{
+        margin: 0;
     }
 }
 

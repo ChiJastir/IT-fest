@@ -1,5 +1,5 @@
 
-/* -- [copy button] -- */
+/* -- Copy button -- */
 const copyButton = document.getElementById('copy-ip')
 if(copyButton){
     copyButton.addEventListener('click', function(){
@@ -16,7 +16,7 @@ if(copyButton){
     })
 }
 
-/* -- [mods slider] -- */
+/* -- Mods slider -- */
 const slider = document.getElementById('modifications-slider')
 const sliderInstance = new ChiefSlider(slider, {
     autoplay: true
@@ -27,3 +27,8 @@ const sliderNextBtn = slider.querySelector('.slider-controls button[data-slide="
 
 if(sliderPrevBtn) sliderPrevBtn.addEventListener('click', () => sliderInstance._moveToPrev())
 if(sliderNextBtn) sliderNextBtn.addEventListener('click', () => sliderInstance._moveToNext())
+
+
+const line = document.getElementsByClassName('online-line')[0]
+
+function loadLine(){line.style.width = line.dataset.percent};
