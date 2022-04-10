@@ -21,6 +21,18 @@ body{
     }
 }
 
+.transparency{
+    opacity: 0;
+    transform: translateY(40px);
+    transition-property: opacity, transform;
+    transition-duration: 700ms;
+}
+
+.transparency.appearance{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
 /* Header */
 
 .navbar{
