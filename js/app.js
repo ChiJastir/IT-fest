@@ -6,7 +6,8 @@ if(copyButton){
         const WriteProccess = navigator.clipboard.writeText(IP)
 
         WriteProccess.then(function(){
-            alert('IP адрес успешно скопирован')
+            document.getElementById('copy-ico').src = './img/check.png'
+            setTimeout(() => {document.getElementById('copy-ico').src = './img/copy-ico.png'},1500);
         })
     })
 }
