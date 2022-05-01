@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style-registration.css">
+    
+    <title>Registration</title>
+</head>
+<body>
+    <div class="registration-box">
+        <h2>Регистрация</h2>
+        <form action="/php-handlers/reg.php" method="post">
+          <div class="user-box">
+            <input type="text" autocomplete="on" placeholder="Имя" name="Name" minlength="3" maxlength="36" required>
+          </div>
+          <div class="user-box">
+            <input type="email" autocomplete="on" placeholder="Почта" name="Email" required>
+          </div>
+          <div class="user-box">
+            <input type="password" autocomplete="on" placeholder="Пароль" name="Password" minlength="5" maxlength="32" required>
+          </div>
+
+          <div style="display: flex; justify-content: space-between;">
+            <div class="user-box-number">
+              <input type="number" name="Age" min="1" max="100" placeholder="Возраст" required>
+            </div>
+  
+            <div class="user-box-number">
+              <input type="number" name="Experience" min="1" max="11" placeholder="Стаж игры" required>
+            </div>
+          </div>
+
+          <input type="submit" class="button" value="Подать заявку">
+        </form>
+      </div>
+</body>
+</html>
